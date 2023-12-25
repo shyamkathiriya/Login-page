@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    height: 490px;
+    width: 430px;
+    /* border: 2px solid blue; */
+    border-radius: 15px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.right-div{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid yellowgreen; */
+    border-radius: 15px;
+    background: linear-gradient(#FF4452, #FF4167);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-text{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.extra-text{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+}
+#btn2{
+    text-transform: uppercase;
+    height: 38px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+#btn2:hover{
+    background-color: black;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 2px 2px 15px;
+}
+.signin{
+   
+    margin-top: 5px;
+}
+a{
+    text-decoration: none;
+  font-size: 14px;
+  color: rgb(49, 57, 58);
+  transition: all .3s ease;
+}
+a:hover{
+    color: black;
+}
+
+
+@media (max-width:480px) {
+    .main {
+        height: 470px;
+        width: 370px;
+
+    } 
+    .login-text{
+        color: white;
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .extra-text{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        word-spacing: 1px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:400px) {
+    .main {
+        height: 430px;
+        width: 300px;
+    }
+    .login-text{
+        color: white;
+        font-size: 33px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .extra-text{
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        word-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    #btn2{
+        text-transform: uppercase;
+        height: 34px;
+        width: 143px;
+        border-radius: 30px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: all .5s ease;
+    }
+}
